@@ -7,4 +7,24 @@ Following the DVR implementation, implement the LSR algorithm using Dijkstra’s
 
 Finally, DVR and LSR will be compared by reporting the number of rounds needed for each algorithm to converge on the same network topologies. The implementation must handle file I/O, socket communication, and multithreading, and produce clear debug output along with final routing tables and round counts for both DVR and LSR.
 
+How to run:
+1. To run Distance Vector Routing:
+   python DVR.py
 
+2. To run Link State Routing:
+   python LSRNode.py
+
+Both programs will:
+- Read network topology from network.txt and network2.txt
+- Create threads for each node in the network
+- Exchange routing information until convergence
+- Output the final routing tables
+- Record the number of rounds until convergence in OUTPUT.txt
+
+Requirements:
+- Python 3.6 or higher
+
+Notes:
+- Make sure all files are in the same directory
+- The program will automatically run on both network topologies
+- The OUTPUT.txt file will show a comparison of convergence times
